@@ -1,9 +1,9 @@
-# pml
+# High-Performance OCR for Printed English and Fraktur using LSTM Networks
 ## Setup Local Environment 
 
 1- Get the repo
 
-    git clone git@github.com:safaa-alnabulsi/pml.git
+    git clone git@github.com:yamen23ali/ocr-lstm.git
     cd pml
 
 2- Create virtual enviroment 
@@ -28,24 +28,6 @@
 3- Clean tar files:
 
     rm -r GT4HistOCR.tar corpus
-
-## Useful Commands
-
-```
-
-qsub -V
-qsub -V -cwd
-qsub -V -cwd -j
-qsub -V -cwd -j y -o dirname
-qsub -V -cwd -j y -o dirname -l cuda=1 #to add more resources
-qsub -V -cwd -j y -o dirname -l cuda=1 run.sh params # to add a script to the queue
-qstat -u "*" #look at queue of all users
-qstat -u “id” #look at jobs of a specific user
-setfacl
-setfacl -R -m dirname:rwX filename # to change permission of the folder
-getfacl # to check the permission of a folder
-
-```
 
 ## References:
 
