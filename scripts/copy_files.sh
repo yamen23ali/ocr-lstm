@@ -1,1 +1,0 @@
-sshpass -p "$1" scp pml_08@cluster.ml.tu-berlin.de:~/pml/$2 ../models/$3
